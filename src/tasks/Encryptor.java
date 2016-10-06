@@ -1,4 +1,4 @@
-package com.tasks;
+package tasks;
 
 /**
  * Created by sir.viters on 20.09.2016.

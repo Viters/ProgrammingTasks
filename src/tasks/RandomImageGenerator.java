@@ -1,4 +1,4 @@
-package com.tasks;
+package tasks;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -15,7 +15,11 @@ class RandomImageGenerator {
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         Color tempColor = type.colorPick();
         /*
-            This loop
+            This loop goes through image chunks following this steps:
+            - create a column in tile
+            - fill tile with columns
+            - create tiles to fill width
+            - go to next row of tiles
          */
         for (int YPos = 0; YPos < height; YPos += tileSize) {
             for (int i = 0; i < width; ++i) {

@@ -1,4 +1,4 @@
-package com.tasks;
+package tasks;
 
 import java.awt.image.BufferedImage;
 
